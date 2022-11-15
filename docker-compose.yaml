@@ -1,7 +1,10 @@
 version: "3.9"
-   
+
 services:
   web:
     build: .
     volumes:
       - .:/code
+    # ローカルで実行するときは以下のポート指定が必要
+    #ports:
+    #  - "8000:8000"
